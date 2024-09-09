@@ -1,0 +1,1114 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+
+:root{
+    --primary-color: rgb(2, 202, 2);
+    --secondary-color: rgb(28, 28, 215);
+    --third-color: rgb(244, 244, 5);
+    --fourth-color: rgb(234, 39, 39);
+}
+body{
+    width: 100%;
+    font-family:"Mulish", sans-serif;
+    background-color: rgb(12, 11, 11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper{
+    width:90%;
+}
+section{
+    width: 100%;
+    margin: 0 auto;
+    padding: 250px 0 250px 0;
+}
+h1{
+    font-size:60px;
+    font-weight: 600;
+}
+h2{
+    font-size: 45px;
+    color: white;
+}
+h3{
+    font-size: 35px;
+}
+
+p{
+    font-family:"Space Mono", monospace;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+}
+
+li{
+    font-size: 20px;
+}
+
+a{
+    font-family: "Space Mono", monospace;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+    background-color:transparent;
+}
+
+
+.primary, .secondary{
+    width: 100px;
+    height: 40px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.primary{
+    color: black;
+    background-color: white;
+}
+
+.secondary{
+    margin-left: 10px;
+}
+
+
+
+/*--------------Header-----------------*/
+
+header, .header-main, .header-main-logo{
+    display: flex;
+}
+
+header{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-main{
+    width: 90%;
+    height: 100%;
+}
+
+.header-main h2, .header-main a{
+    color: white;
+    
+}
+.header-main-logo{
+    align-items: center;
+    column-gap: 20px;
+    font-size: 25px;
+}
+
+.header-main{
+    align-items: center;
+    column-gap: 80px;
+    padding:10px;
+}
+
+.header-main-logo img{
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
+
+.header-menu-bar{
+    display: flex;
+    column-gap: 20px;
+}
+
+.burger-menu {
+    width: 20%;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+}
+
+.burger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/*------------------------------------*/
+
+
+
+
+
+/*------------Hero-Section------------*/
+
+.herosec-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-align: center;
+    padding: 300px 0 300px 0;
+}
+
+.herosec-content{
+    width:100%;
+}
+
+/*------------------------------------*/
+
+
+
+
+/*-----------About-section------------*/
+.aboutsec-main{
+    display: flex;
+    justify-content: center;
+}
+.aboutsec-content{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.aboutsec-text, .aboutsec-content img{
+    width: 45%;
+}
+.aboutsec-content img{
+    width:300px;
+    height: 300px;
+    border-radius: 300px;
+}
+.aboutsec-text{
+    text-align: left;
+}
+
+/*------------------------------------*/
+
+
+/*----------Skillset-section----------*/
+
+.skillset-main, .skillset-content{
+    display: flex;
+}
+.skillset-main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.skillset-content {
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.skillset-content h3{
+  font-weight: 500;
+  text-align: center;
+}
+
+.skillset-content p{
+    padding: 20px;
+}
+
+.webdev, .dataanal{
+    width:40%;
+    padding: 20px;
+    color:white;
+    font-weight: 300;
+    text-align:justify;
+}
+
+.webdev {
+    border-left: 2px solid orange;
+    padding-left: 20px;
+}
+
+.dataanal {
+    border-right: 2px solid green;
+    padding-right: 20px;
+}
+/*
+.webdev{
+    border: 2px solid var(--third-color);
+}
+.dataanal{
+    border: 2px solid var(--primary-color);
+}
+*/
+.webdev div, .dataanal div{
+    width: 100%;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+.webdev div img, .dataanal div img{
+    width: 60px;
+    height: 60px;
+}
+.dataanal div :nth-child(3){
+    width: 40px;
+    height: 60px;
+}
+
+/*------------------------------------*/
+
+
+
+/*------------Contact-section---------*/
+
+.contact-main{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-main h3, .contact-main p{
+    margin: 10px 0 10px 0;
+    font-family:"Space Mono", monospace; 
+    font-weight: 400;
+}
+
+.contact-content{
+    width:100%;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.contact-content .content, .form{
+    width: 45%;
+}
+
+.contact-mail, .contact-phone, .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-img img{
+    width: 150px;
+    height: 150px;
+}
+
+.form{
+    border:2px solid white;
+    border-radius: 20px;
+}
+.form form{
+    width:50%;
+}
+.form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.form textarea{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/*------------------------------------*/
+
+
+
+/*--------Skillset-capabilities-------
+
+.skillset-capabilities, .html, .css, .javascript, .excel, .spreadsheet, .looker{
+    display: flex;
+}
+.skillset-capabilities h2, .html, .css, .javascript, .excel, .spreadsheet, .looker{
+    margin-bottom: 30px;
+}
+.skillset-capabilities{
+    justify-content: center;
+    text-align: center;
+}
+.skillset-capabilities-content{
+    width: 30%;
+}
+.skillset-capabilities img{
+    height: 50px;
+    width: 50px;
+}
+.looker img{
+    height: 50px;
+    width: 30px;
+}
+.html, .css, .javascript, .excel, .spreadsheet, .looker{
+    width: 100%;
+    justify-content: space-between; 
+}
+.html-bar, .css-bar, .javascript-bar, .excel-bar, .spreadsheet-bar, .looker-bar{
+    width: 350px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.html-bar div, .css-bar div, .javascript-bar div, .excel-bar div, .spreadsheet-bar div, .looker-bar div{
+    height: 100%;
+    align-content: center; 
+    border-radius: 8px 0 0 8px;
+}
+.html-bar div{
+    width: 85%;
+    background-color: orange;
+}
+.css-bar div{
+    width: 75%;
+    background-color: blue;
+}
+.javascript-bar div{
+    width: 60%;
+    background-color: yellow;
+}
+.excel-bar div{
+    width: 90%;
+    background-color: green;
+}
+.spreadsheet-bar div{
+    width: 95%;
+    background-color: lightgreen;
+}
+.looker-bar div{
+    width: 85%;
+    background-color: lightblue;
+}
+------------------------------------*/
+
+
+/*----------Animation Classes---------*/
+
+.hidden {
+    opacity: 0;
+    filter:blur(5px);
+    transform: translateX(-25%);
+    transition: all 1s;
+}
+
+.hiddenRev{
+    opacity: 0;
+    filter:blur(5px);
+    transform: translateX(25%);
+    transition: all 1s;
+}
+
+.hiddenAbove{
+    opacity: 0;
+    filter:blur(5px);
+    transform: translateY(-100%);
+    transition: all 1s
+}
+
+.rolling {
+    opacity: 0;
+    transform: translateX(-100%) rotate(-360deg);
+    transition: all 1s;
+}
+
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.logoWeb:nth-child(1){
+    transition-delay:200ms;
+}
+
+.logoWeb:nth-child(2){
+    transition-delay:600ms;
+}
+
+.logoWeb:nth-child(3){
+    transition-delay:1000ms;
+}
+
+.logoData:nth-child(3){
+    transition-delay:200ms;
+}
+
+.logoData:nth-child(2){
+    transition-delay:600ms;
+}
+
+.logoData:nth-child(1){
+    transition-delay:1000ms;
+}
+
+
+.contactContent{
+    transition-delay:600ms;
+}
+
+
+
+/*------------------------------------*/
+
+
+
+/*----------------Footer--------------*/
+
+footer{
+    width: 100%;
+    background-color:white;
+}
+.footer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 10px 60px 10px;
+    margin: 0 auto;
+}
+.footer div, footer nav{
+    width: 33%;
+}
+.footer h2{
+  font-size: 45px;
+}
+.footer h3{
+  font-size: 20px;
+}
+.footer a, .footer h2, .footer h3, .footer  li{
+    color: black;
+    text-align: center;
+}
+.gmail-acc{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+/*------------------------------------*/
+
+
+
+
+
+/*-----------------Tablet---------------------*/
+
+@media (max-width: 1200px){
+    body{
+        width: 100%;
+        font-family:"Mulish", sans-serif;
+        background-color: rgb(12, 11, 11);
+    }
+    
+    section{
+        margin: 0 auto;
+        padding: 250px 0 250px 0;
+    }
+    h1{
+        font-size:55px;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 40px;
+        color: white;
+    }
+    h3{
+        font-size: 30px;
+    }
+    
+    p{
+        font-family:"Space Mono", monospace;
+        font-size: 16.5px;
+        line-height: 23px;
+        color: white;
+    }
+    
+    li{
+        font-size: 20px;
+    }
+    
+    a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    button{
+        cursor: pointer;
+        background-color:transparent;
+    }
+    
+    iframe{
+        border-radius: 10px;
+    }
+    .primary, .secondary{
+        width: 100px;
+        height: 40px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    
+    .primary{
+        color: black;
+        background-color: white;
+    }
+    
+    .secondary{
+        margin-left: 10px;
+    }
+    
+    
+    
+    /*--------------Header-----------------*/
+    
+    .header-main{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header-main-logo{
+        font-size: 20px;
+    }
+
+    .header-menu-bar {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 150px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+    
+    .header-menu-bar.active {
+        display: flex;
+    }
+
+    
+    /*------------------------------------*/
+    
+    
+    
+    
+    
+    /*------------Hero-Section------------*/
+    
+    .herosec-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        text-align: center;
+        padding: 300px 0 300px 0;
+    }
+    
+    /*------------------------------------*/
+    
+    
+    
+    
+    /*-----------About-section------------*/
+    .aboutsec-main{
+        display: flex;
+        justify-content: center;
+    }
+    .aboutsec-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+    .aboutsec-text, .aboutsec-content img{
+        width: 100%;
+    }
+    .aboutsec-content img{
+        width:300px;
+        height: 300px;
+        border-radius: 300px;
+    }
+    .aboutsec-text{
+        text-align: center;
+    }
+    
+    /*------------------------------------*/
+    
+    
+    /*----------Skillset-section----------*/
+    
+    .skillset-main, .skillset-content{
+        display: flex;
+    }
+    .skillset-main{
+        flex-direction: column;
+        text-align: center;
+    }
+    .skillset-content {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    
+    .skillset-content h3{
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .skillset-content p{
+        padding: 10px;
+    }
+    
+    .webdev, .dataanal{
+        width:50%;
+        padding: 20px;
+        color:white;
+        font-weight: 300;
+        text-align:justify;
+    }
+    
+    .webdev {
+        border-left: 2px solid orange;
+        padding-left: 20px;
+    }
+    
+    .dataanal {
+        border-right: 2px solid green;
+        padding-right: 20px;
+    }
+
+    .webdev div, .dataanal div{
+        width: 100%;
+        display: flex;
+        column-gap: 30px;
+        justify-content: center;
+    }
+    .webdev div img, .dataanal div img{
+        width: 60px;
+        height: 60px;
+    }
+    .dataanal div :nth-child(3){
+        width: 40px;
+        height: 60px;
+    }
+    
+    /*------------------------------------*/
+    
+    
+    
+    /*------------Contact-section---------*/
+    
+    .contact-main{
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact-main h3, .contact-main p{
+        margin: 10px 0 10px 0;
+        font-family:"Space Mono", monospace; 
+        font-weight: 400;
+    }
+    
+    .contact-content{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .contact-content .content, .form{
+        width: 45%;
+    }
+    
+    .form{
+        display: flex;
+        justify-content: center;
+    }
+    .contact-mail, .contact-phone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .contact-img img{
+        width: 150px;
+        height: 150px;
+    }
+       
+    
+    
+    /*----------------Footer--------------*/
+    
+    footer{
+        display: flex;
+        justify-content: space-between;
+        color:white;
+        background-color:white;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 40px 10px 40px 10px;
+    }
+    .footer div, .footer nav{
+        width: 33%;
+    }
+    .footer h2{
+      font-size: 30px;
+    }
+    .footer h3{
+      font-size: 15px;
+    }
+    .footer a, .footer h2, .footer h3, .footer  li{
+        color: black;
+        text-align: center;
+    }
+    .gmail-acc{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+}
+    
+
+
+/*--------------------------------------------*/
+
+
+
+
+
+
+
+/*--------------Mobile small------------------*/
+
+@media (max-width: 600px){
+
+    body{
+       
+        padding: 0;
+        margin-left:0;
+    }
+    section{
+        
+        margin:0 auto;
+        padding: 100px 0 100px 0;
+    }
+
+    h1{
+        font-size:35px;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 30px;
+        color: white;
+    }
+    h3{
+        font-size: 25px;
+    }
+    
+    p{
+        font-family:"Space Mono", monospace;
+        font-size: 12px;
+        line-height: 19px;
+        color: white;
+    }
+    
+    li{
+        font-size: 20px;
+    }
+    
+    a{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    button{
+        cursor: pointer;
+        background-color:transparent;
+    }
+    
+    iframe{
+        border-radius: 10px;
+    }
+    .primary, .secondary{
+        width: 80px;
+        height: 40px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    
+    .primary{
+        color: black;
+        background-color: white;
+    }
+    
+    .secondary{
+        margin-left: 10px;
+    }
+    
+
+    
+    /*--------------Header-----------------*/
+    .header-main{
+        justify-content: space-between;
+    }
+
+    .header-main-logo{
+        font-size: 20px;
+    }
+
+    .header-menu-bar {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 150px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+    
+    .header-menu-bar.active {
+        display: flex;
+    }
+
+    /*------------------------------------*/
+
+
+
+
+    /*------------Hero-Section------------*/
+
+    .herosec-main{
+        width:80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        text-align: center;
+    }
+
+    /*------------------------------------*/
+
+    /*-----------About-section------------*/
+    .aboutsec-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutsec-content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .aboutsec-content img{
+        width: 100%;
+    }
+    .aboutsec-content img{
+        width:150px;
+        height: 150px;
+        border-radius: 150px;
+    }
+    .aboutsec-text{
+        text-align: left;
+        width: 75%;
+    }
+
+    /*------------------------------------*/
+
+    /*----------Skillset-section----------*/
+
+    .skillset-main, .skillset-content{
+        display: flex;
+    }
+    .skillset-main{
+        flex-direction: column;
+        text-align: center;
+    }
+    .skillset-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .skillset-content h3{
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .skillset-content p{
+        padding:5px;
+    }
+
+    .webdev, .dataanal{
+        width:80%;
+        color:white;
+        font-weight: 300;
+        text-align: left;
+        
+    }
+
+    .webdev {
+        border-left: 2px solid orange;
+        
+    }
+
+    .dataanal {
+        border-right: 2px solid green;
+    }
+
+    .webdev div, .dataanal div{
+        width: 100%;
+        display: flex;
+        column-gap: 30px;
+        justify-content: center;
+    }
+    .webdev div img, .dataanal div img{
+        width: 50px;
+        height: 50px;
+    }
+    .dataanal div :nth-child(3){
+        width: 30px;
+        height: 50px;
+    }
+
+    /*------------------------------------*/
+
+    /*------------Contact-section---------*/
+
+    .contact-main{
+        color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contact-main h3, .contact-main p{
+        margin: 10px 0 10px 0;
+        font-family:"Space Mono", monospace; 
+        font-weight: 400;
+    }
+
+    .contact-main p{
+        font-size: 15px;
+    }
+
+    .contact-content{
+        width:80%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+
+    }
+
+    .form{
+        display: flex;
+        justify-content: center;
+        width:90%
+    }
+    .contact-mail, .contact-phone{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-img img{
+        width: 80px;
+        height: 80px;
+    }
+
+    /*----------------Footer--------------*/
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:white;
+        margin: 0;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: none;
+        padding: 30px 10px 30px 10px;
+    }
+    .footer div, .footer nav{
+        width: 100%;
+    }
+    .footer h2{
+        font-size: 20px;
+    }
+    .footer h3{
+        font-size: 10px;
+    }
+    .footer a, .footer h2, .footer h3, .footer  li{
+        color: black;
+        text-align: center;
+    }
+    .gmail-acc{
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    /*------------------------------------*/
+}
+
+/*---------------------------------------------*/
+
