@@ -746,10 +746,9 @@ footer{
         width: 45%;
     }
     
-    .form{
-        display: flex;
-        justify-content: center;
-    }
+    .form form{
+        width:80%;
+   }
     .contact-mail, .contact-phone{
         display: flex;
         flex-direction: column;
@@ -1048,10 +1047,8 @@ footer{
 
     }
 
-    .form{
-        display: flex;
-        justify-content: center;
-        width:90%
+    .form form{
+    width:80%;
     }
     .contact-mail, .contact-phone{
         width: auto;
