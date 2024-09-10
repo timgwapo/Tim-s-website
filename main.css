@@ -16,16 +16,13 @@
 body{
     width: 100%;
     font-family:"Mulish", sans-serif;
-    background-color: rgb(12, 11, 11);
+    background-color: #010101;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.wrapper{
-    width:90%;
-}
 section{
     width: 100%;
     margin: 0 auto;
@@ -85,7 +82,29 @@ button{
     margin-left: 10px;
 }
 
+input{
+    font-size: 16px;
+    font-family: "Space Mono", monospace; 
+    padding-left: 5px;
+}
 
+input::placeholder {
+    color: #888; /* Change the color of the placeholder text */
+    font-size: 16px; /* Change the font size */
+    font-family: "Space Mono", monospace; /* Make the placeholder text italic */
+    opacity: 1; /* Control the opacity */
+}
+
+textarea{
+    font-family:"Space Mono", monospace ;
+    padding-left: 5px;
+}
+
+textarea::placeholder {
+    font-family: "Space Mono", monospace;
+    font-size: 16px;
+    color: #888;
+}
 
 /*--------------Header-----------------*/
 
@@ -160,8 +179,10 @@ header{
     align-items: center;
     color:white;
     text-align: center;
-    padding: 300px 0 300px 0;
+    padding: 300px 0 350px 0;
 }
+
+
 
 .herosec-content{
     width:100%;
@@ -274,6 +295,21 @@ header{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+}
+
+.contact-main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/Background.jpg);
+    background-size: cover;
+    background-position: center;
+    /* Adjust this value to set the desired opacity */
+    z-index: -1; /* Place the background behind the content */
 }
 
 .contact-main h3, .contact-main p{
@@ -306,21 +342,20 @@ header{
 }
 
 .form{
-    border:2px solid white;
-    border-radius: 20px;
+    border-right:2px solid orange;
 }
 .form form{
-    width:50%;
+    width:80%;
 }
 .form input{
-    width: 100%;
+    width: 90%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .form textarea{
-    width: 100%;
-    border-radius: 5px;
+    width: 90%;
+    border-radius: 10px;
 }
 
 
@@ -622,7 +657,10 @@ footer{
         align-items: center;
         color:white;
         text-align: center;
-        padding: 300px 0 300px 0;
+    }
+
+    .herosec-content{
+        width: 80%;
     }
     
     /*------------------------------------*/
@@ -643,7 +681,7 @@ footer{
         row-gap: 30px;
     }
     .aboutsec-text, .aboutsec-content img{
-        width: 100%;
+        width: 80%;
     }
     .aboutsec-content img{
         width:300px;
@@ -667,7 +705,7 @@ footer{
         text-align: center;
     }
     .skillset-content {
-        width: 90%;
+        width: 80%;
         display: flex;
         justify-content: center;
         row-gap: 30px;
@@ -735,15 +773,15 @@ footer{
     }
     
     .contact-content{
-        width:100%;
+        width:80%;
         display: flex;
         flex-direction: column;
         justify-content:center;
         align-items: center;
     }
     
-    .contact-content .content, .form{
-        width: 45%;
+    .content, .form{
+        width: 100%;
     }
     
     .form form{
@@ -778,7 +816,7 @@ footer{
         padding: 40px 10px 40px 10px;
     }
     .footer div, .footer nav{
-        width: 33%;
+        width: 26.66%;
     }
     .footer h2{
       font-size: 30px;
@@ -826,11 +864,11 @@ footer{
     section{
         
         margin:0 auto;
-        padding: 100px 0 100px 0;
+        padding: 150px 0 150px 0;
     }
 
     h1{
-        font-size:35px;
+        font-size:45px;
         font-weight: 600;
     }
     h2{
@@ -843,8 +881,8 @@ footer{
     
     p{
         font-family:"Space Mono", monospace;
-        font-size: 12px;
-        line-height: 19px;
+        font-size: 15px;
+        line-height: 25px;
         color: white;
     }
     
@@ -923,12 +961,11 @@ footer{
     /*------------Hero-Section------------*/
 
     .herosec-main{
-        width:80%;
         display: flex;
         justify-content: center;
         align-items: center;
         color:white;
-        text-align: center;
+        text-align: left;
     }
 
     /*------------------------------------*/
@@ -946,17 +983,14 @@ footer{
         align-items: center;
         row-gap: 30px;
     }
+
     .aboutsec-content img{
-        width: 100%;
-    }
-    .aboutsec-content img{
-        width:150px;
-        height: 150px;
-        border-radius: 150px;
+        width:200px;
+        height: 200px;
+        border-radius: 200px;
     }
     .aboutsec-text{
-        text-align: left;
-        width: 75%;
+        text-align: center;
     }
 
     /*------------------------------------*/
@@ -1076,10 +1110,10 @@ footer{
         width: 100%;
     }
     .footer h2{
-        font-size: 20px;
+        font-size: 30px;
     }
     .footer h3{
-        font-size: 10px;
+        font-size: 15px;
     }
     .footer a, .footer h2, .footer h3, .footer  li{
         color: black;
