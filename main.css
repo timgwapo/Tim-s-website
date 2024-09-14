@@ -150,6 +150,12 @@ header{
     column-gap: 20px;
 }
 
+.header-menu-bar :nth-child(4){
+    padding:0 5px 0 5px;
+    background-color: orange;
+    border-radius: 8px;
+}
+
 .burger-menu {
     width: 20%;
     display: none;
@@ -165,6 +171,7 @@ header{
     margin: 4px 0;
 }
 
+
 /*------------------------------------*/
 
 
@@ -179,7 +186,7 @@ header{
     align-items: center;
     color:white;
     text-align: center;
-    padding: 300px 0 350px 0;
+    padding: 300px 0 300px 0;
 }
 
 
@@ -239,25 +246,26 @@ header{
   text-align: center;
 }
 
-.skillset-content p{
-    padding: 20px;
-}
-
 .webdev, .dataanal{
-    width:40%;
+    width:50%;
     color:white;
     font-weight: 300;
-    text-align:justify;
+    text-align:left;
+}
+
+.webdev p, .dataanal p{
+    width:80%;
+    margin: 0 auto;
 }
 
 .webdev {
     border-left: 2px solid orange;
-    padding-left: 20px;
+    padding-left: 5px;
 }
 
 .dataanal {
     border-right: 2px solid green;
-    padding-right: 20px;
+    padding-right: 5px;
 }
 /*
 .webdev{
@@ -304,7 +312,7 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/background.jpg);
+    background-image: url(img/Background.jpg);
     background-size: cover;
     background-position: center;
     /* Adjust this value to set the desired opacity */
@@ -534,6 +542,12 @@ footer{
     flex-direction: column;
     align-items: end;
 }
+
+.footer-menu :nth-child(6){
+    padding:0 5px 0 5px;
+    background-color: orange;
+    border-radius: 8px;
+}
 /*------------------------------------*/
 
 
@@ -543,16 +557,7 @@ footer{
 /*-----------------Tablet---------------------*/
 
 @media (max-width: 1200px){
-    body{
-        width: 100%;
-        font-family:"Mulish", sans-serif;
-        background-color: rgb(12, 11, 11);
-    }
     
-    section{
-        margin: 0 auto;
-        padding: 250px 0 250px 0;
-    }
     h1{
         font-size:55px;
         font-weight: 600;
@@ -581,34 +586,6 @@ footer{
         cursor: pointer;
     }
     
-    button{
-        cursor: pointer;
-        background-color:transparent;
-    }
-    
-    iframe{
-        border-radius: 10px;
-    }
-    .primary, .secondary{
-        width: 100px;
-        height: 40px;
-        color: white;
-        border: 1px solid white;
-        border-radius: 5px;
-        font-weight: 500;
-        font-size: 16px;
-    }
-    
-    .primary{
-        color: black;
-        background-color: white;
-    }
-    
-    .secondary{
-        margin-left: 10px;
-    }
-    
-    
     
     /*--------------Header-----------------*/
     
@@ -650,17 +627,7 @@ footer{
     
     /*------------Hero-Section------------*/
     
-    .herosec-main{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:white;
-        text-align: center;
-    }
-
-    .herosec-content{
-        width: 80%;
-    }
+   
     
     /*------------------------------------*/
     
@@ -668,12 +635,12 @@ footer{
     
     
     /*-----------About-section------------*/
+    
     .aboutsec-main{
         display: flex;
         justify-content: center;
     }
     .aboutsec-content{
-        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
@@ -690,67 +657,13 @@ footer{
     .aboutsec-text{
         text-align: center;
     }
-    
+
     /*------------------------------------*/
     
     
     /*----------Skillset-section----------*/
     
-    .skillset-main, .skillset-content{
-        display: flex;
-    }
-    .skillset-main{
-        flex-direction: column;
-        text-align: center;
-    }
-    .skillset-content {
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        row-gap: 30px;
-    }
-    
-    .skillset-content h3{
-      font-weight: 500;
-      text-align: center;
-    }
 
-    .skillset-content p{
-        padding: 10px;
-    }
-    
-    .webdev, .dataanal{
-        width:50%;
-        padding: 20px;
-        color:white;
-        font-weight: 300;
-        text-align:justify;
-    }
-    
-    .webdev {
-        border-left: 2px solid orange;
-        padding-left: 20px;
-    }
-    
-    .dataanal {
-        border-right: 2px solid green;
-        padding-right: 20px;
-    }
-
-    .webdev div, .dataanal div{
-        width: 100%;
-        display: flex;
-        column-gap: 30px;
-        justify-content: center;
-    }
-    .webdev div img, .dataanal div img{
-        width: 60px;
-        height: 60px;
-    }
-    .dataanal div :nth-child(3){
-        width: 40px;
-        height: 60px;
-    }
     
     /*------------------------------------*/
     
@@ -758,22 +671,8 @@ footer{
     
     /*------------Contact-section---------*/
     
-    .contact-main{
-        color:white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .contact-main h3, .contact-main p{
-        margin: 10px 0 10px 0;
-        font-family:"Space Mono", monospace; 
-        font-weight: 400;
-    }
     
     .contact-content{
-        width:80%;
-        display: flex;
         flex-direction: column;
         justify-content:center;
         align-items: center;
@@ -782,35 +681,12 @@ footer{
     .content, .form{
         width: 100%;
     }
-    
-    .form form{
-        width:80%;
-   }
-    .contact-mail, .contact-phone{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .contact-img img{
-        width: 150px;
-        height: 150px;
-    }
        
     
     
     /*----------------Footer--------------*/
     
-    footer{
-        display: flex;
-        justify-content: space-between;
-        color:white;
-        background-color:white;
-    }
     .footer{
-        display: flex;
         justify-content: space-evenly;
         padding: 40px 10px 40px 10px;
     }
@@ -822,21 +698,6 @@ footer{
     }
     .footer h3{
       font-size: 15px;
-    }
-    .footer a, .footer h2, .footer h3, .footer  li{
-        color: black;
-        text-align: center;
-    }
-    .gmail-acc{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-    
-    .footer-menu{
-        display: flex;
-        flex-direction: column;
-        align-items: end;
     }
 
 }
@@ -853,72 +714,35 @@ footer{
 
 /*--------------Mobile small------------------*/
 
-@media (max-width: 600px){
+@media (max-width: 626px){
 
-    body{
-       
-        padding: 0;
-        margin-left:0;
-    }
+
     section{
-        
-        margin:0 auto;
         padding: 150px 0 150px 0;
     }
 
     h1{
         font-size:45px;
-        font-weight: 600;
     }
     h2{
         font-size: 30px;
-        color: white;
     }
     h3{
         font-size: 25px;
     }
     
     p{
-        font-family:"Space Mono", monospace;
         font-size: 15px;
         line-height: 25px;
-        color: white;
     }
     
-    li{
-        font-size: 20px;
-    }
-    
-    a{
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
-    button{
-        cursor: pointer;
-        background-color:transparent;
-    }
-    
-    iframe{
-        border-radius: 10px;
-    }
     .primary, .secondary{
         width: 80px;
-        height: 40px;
-        color: white;
-        border: 1px solid white;
-        border-radius: 5px;
-        font-weight: 500;
-        font-size: 16px;
     }
     
     .primary{
         color: black;
         background-color: white;
-    }
-    
-    .secondary{
-        margin-left: 10px;
     }
     
 
@@ -960,10 +784,6 @@ footer{
     /*------------Hero-Section------------*/
 
     .herosec-main{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:white;
         text-align: left;
         padding: 150px 0 190px 0;
     }
@@ -972,14 +792,10 @@ footer{
 
     /*-----------About-section------------*/
     .aboutsec-main{
-        display: flex;
-        justify-content: center;
         align-items: center;
     }
     .aboutsec-content{
-        display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
         align-items: center;
         row-gap: 30px;
     }
@@ -997,51 +813,17 @@ footer{
 
     /*----------Skillset-section----------*/
 
-    .skillset-main, .skillset-content{
-        display: flex;
-    }
-    .skillset-main{
-        flex-direction: column;
-        text-align: center;
-    }
     .skillset-content {
         display: flex;
         flex-direction: column;
         row-gap: 40px;
     }
 
-    .skillset-content h3{
-        font-weight: 500;
-        text-align: center;
-    }
-
-    .skillset-content p{
-        padding:5px;
-    }
-
     .webdev, .dataanal{
-        width:80%;
-        color:white;
-        font-weight: 300;
-        text-align: left;
-        
+        width:90%;
     }
+    
 
-    .webdev {
-        border-left: 2px solid orange;
-        
-    }
-
-    .dataanal {
-        border-right: 2px solid green;
-    }
-
-    .webdev div, .dataanal div{
-        width: 100%;
-        display: flex;
-        column-gap: 30px;
-        justify-content: center;
-    }
     .webdev div img, .dataanal div img{
         width: 50px;
         height: 50px;
@@ -1055,34 +837,12 @@ footer{
 
     /*------------Contact-section---------*/
 
-    .contact-main{
-        color:white;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .contact-main h3, .contact-main p{
-        margin: 10px 0 10px 0;
-        font-family:"Space Mono", monospace; 
-        font-weight: 400;
-    }
-
     .contact-main p{
         font-size: 15px;
     }
 
      .contact-content .content, .form{
         width: 100%;
-    }
-    .contact-mail, .contact-phone{
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
 
     .contact-img img{
@@ -1096,11 +856,8 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color:white;
-        margin: 0;
     }
     .footer{
-        display: flex;
         flex-direction: column;
         row-gap: 20px;
         justify-content: none;
@@ -1115,18 +872,12 @@ footer{
     .footer h3{
         font-size: 15px;
     }
-    .footer a, .footer h2, .footer h3, .footer  li{
-        color: black;
-        text-align: center;
-    }
+
     .gmail-acc{
-        display: flex;
         align-items: center;
     }
 
     .footer-menu{
-        display: flex;
-        flex-direction: column;
         align-items: center;
     }
  
