@@ -12,9 +12,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenClasses = document.querySelectorAll('.hidden,.hiddenRev, .rolling, .hiddenAbove');
 hiddenClasses.forEach((el) => observer.observe(el));
 
-document.querySelector('.burger-menu').addEventListener('click', function() {
-    document.querySelector('.header-menu-bar').classList.toggle('active');
-});
+
 
 const form = document.querySelector("form");
 
@@ -38,3 +36,21 @@ function sendEmail() {
       message => alert("successfully sent")
     );
 }
+
+
+const burgerBtn = document.querySelector('.burger-btn');
+const burgerMenuBar = document.querySelector('.burger-menu-bar');
+
+const menuItems = document.querySelectorAll('.burger-menu-bar ul li a');
+
+// Toggle the menu visibility when burger button is clicked
+burgerBtn.addEventListener('click', function() {
+    burgerMenuBar.style.display = burgerMenuBar.style.display === 'flex' ? 'none' : 'flex';
+});
+
+// Hide the menu when any menu item is clicked
+menuItems.forEach(item => {
+    item.addEventListener('click', function() {
+        burgerMenuBar.style.display = 'none';
+    });
+});
