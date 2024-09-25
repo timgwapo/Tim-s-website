@@ -17,10 +17,6 @@ body{
     width: 100%;
     font-family:"Mulish", sans-serif;
     background-color: #010101;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 section{
@@ -28,6 +24,7 @@ section{
     margin: 0 auto;
     padding: 250px 0 250px 0;
 }
+
 h1{
     font-size:60px;
     font-weight: 600;
@@ -55,7 +52,26 @@ a{
     font-family: "Space Mono", monospace;
     text-decoration: none;
     cursor: pointer;
+    display: block;
 }
+
+.header-menu-bar li{
+    height: 70%;
+    font-size: 20px;
+    align-self: center;
+}
+
+.header-menu-bar a{
+    height: 100%;
+}
+
+.header-menu-bar a:hover{
+    border-bottom: 5px solid white;
+    color: white;
+    padding: 0 10px;
+    transition: 0.5s;
+}
+
 
 button{
     cursor: pointer;
@@ -63,24 +79,38 @@ button{
 }
 
 
-.primary, .secondary{
+.primary{
     width: 100px;
     height: 40px;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 5px;
     font-weight: 500;
     font-size: 16px;
 }
 
-.primary{
-    color: black;
+
+.primary:hover{
     background-color: white;
+    color: black;
+    transition: 0.5s;
 }
 
 .secondary{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #010101;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
     margin-left: 10px;
 }
+
+.secondary:hover{
+    border-bottom: 4px solid white;
+}
+
 
 input{
     font-size: 16px;
@@ -114,6 +144,7 @@ header, .header-main, .header-main-logo{
 
 header{
     width: 100%;
+    height:80px;
     justify-content: center;
     align-items: center;
 }
@@ -131,6 +162,8 @@ header{
     align-items: center;
     column-gap: 20px;
     font-size: 25px;
+    padding: 0 20px 0 0;
+    border-right: 4px dotted rgb(49, 255, 49);
 }
 
 .header-main{
@@ -146,30 +179,34 @@ header{
 }
 
 .header-menu-bar{
+    height: 100%;
     display: flex;
     column-gap: 20px;
 }
 
-.header-menu-bar :nth-child(4){
-    padding:0 5px 0 5px;
-    background-color: orange;
-    border-radius: 8px;
-}
-
-.burger-menu {
-    width: 20%;
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+.header-menu-bar li a{
+    height: 100%;
+    display: flex;
     align-items: center;
 }
 
-.burger-menu .line {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
+
+.header-menu-bar :nth-child(4) a{
+    border:2px solid orange;
+    padding: 0 5px;
+    border-radius: 5px;
+
 }
+
+.header-menu-bar :nth-child(4) a:hover{
+    padding:0 10px;
+    color:#010101;
+    background-color: orange;
+    border:2px solid orange;
+    transition: 1s;
+}
+
+
 
 
 /*------------------------------------*/
@@ -237,44 +274,38 @@ header{
     text-align: center;
 }
 .skillset-content {
-    width: 80%;
-    justify-content: space-evenly;
+    width: 79%;
+    justify-content: center;
 }
 
 .skillset-content h3{
-  font-weight: 500;
-  text-align: center;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .webdev, .dataanal{
-    width:50%;
+    width:45%;
     color:white;
     font-weight: 300;
     text-align:left;
 }
 
 .webdev p, .dataanal p{
-    width:80%;
+    width:85%;
     margin: 0 auto;
+    font-size: 15px;
 }
 
-.webdev {
-    border-left: 2px solid orange;
-    padding-left: 5px;
-}
 
-.dataanal {
-    border-right: 2px solid green;
-    padding-right: 5px;
-}
-/*
 .webdev{
-    border: 2px solid var(--third-color);
+    background: linear-gradient(to right, black, rgb(220, 144, 2));
+    
 }
 .dataanal{
-    border: 2px solid var(--primary-color);
+    background: linear-gradient(to left, black, rgb(1, 112, 1));
 }
-*/
+
 .webdev div, .dataanal div{
     width: 100%;
     display: flex;
@@ -370,68 +401,6 @@ header{
 
 
 
-/*--------Skillset-capabilities-------
-
-.skillset-capabilities, .html, .css, .javascript, .excel, .spreadsheet, .looker{
-    display: flex;
-}
-.skillset-capabilities h2, .html, .css, .javascript, .excel, .spreadsheet, .looker{
-    margin-bottom: 30px;
-}
-.skillset-capabilities{
-    justify-content: center;
-    text-align: center;
-}
-.skillset-capabilities-content{
-    width: 30%;
-}
-.skillset-capabilities img{
-    height: 50px;
-    width: 50px;
-}
-.looker img{
-    height: 50px;
-    width: 30px;
-}
-.html, .css, .javascript, .excel, .spreadsheet, .looker{
-    width: 100%;
-    justify-content: space-between; 
-}
-.html-bar, .css-bar, .javascript-bar, .excel-bar, .spreadsheet-bar, .looker-bar{
-    width: 350px;
-    border: 2px solid white;
-    border-radius: 10px;
-}
-.html-bar div, .css-bar div, .javascript-bar div, .excel-bar div, .spreadsheet-bar div, .looker-bar div{
-    height: 100%;
-    align-content: center; 
-    border-radius: 8px 0 0 8px;
-}
-.html-bar div{
-    width: 85%;
-    background-color: orange;
-}
-.css-bar div{
-    width: 75%;
-    background-color: blue;
-}
-.javascript-bar div{
-    width: 60%;
-    background-color: yellow;
-}
-.excel-bar div{
-    width: 90%;
-    background-color: green;
-}
-.spreadsheet-bar div{
-    width: 95%;
-    background-color: lightgreen;
-}
-.looker-bar div{
-    width: 85%;
-    background-color: lightblue;
-}
-------------------------------------*/
 
 
 /*----------Animation Classes---------*/
@@ -512,7 +481,7 @@ footer{
     background-color:white;
 }
 .footer{
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     padding: 60px 10px 60px 10px;
@@ -548,6 +517,16 @@ footer{
     background-color: orange;
     border-radius: 8px;
 }
+
+.burger-menu-bar, .burger-btn{
+    display:none;
+    cursor: pointer;
+}
+
+.burger-btn{
+    background-image: url(img/burger\ menu.jpg);
+    background-size: cover;
+}
 /*------------------------------------*/
 
 
@@ -557,7 +536,51 @@ footer{
 /*-----------------Tablet---------------------*/
 
 @media (max-width: 1200px){
+     
+    .burger-btn{
+        display: block;
+        width: 50px;
+        height: 50px;
+        color:white;
+    }
+
+    .burger-menu-bar{
+        display:none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        background-color: black;
+        
+    }
     
+    .burger-menu-bar ul{
+        width:100%;
+        height:100vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .burger-menu-bar ul li{
+        flex-basis: 100%;
+        border-top:2px solid white;
+    }
+
+    .burger-menu-bar ul li:last-child{
+        background-color: orange;
+    }
+
+    .burger-menu-bar ul li a{
+       display: block;
+       height: 100%;
+       padding: 50px 0;
+       flex-basis: 100%;
+       text-align: center;
+       font-size: 30px;
+       color: white;
+    }
+
     h1{
         font-size:55px;
         font-weight: 600;
@@ -585,6 +608,10 @@ footer{
         text-decoration: none;
         cursor: pointer;
     }
+
+    .secondary{
+        text-decoration: underline;
+    }
     
     
     /*--------------Header-----------------*/
@@ -598,26 +625,9 @@ footer{
         font-size: 20px;
     }
 
-    .header-menu-bar {
+    .header-menu-bar{
         display: none;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        width: 150px;
-        padding: 10px;
-        border-radius: 8px;
     }
-
-    .burger-menu {
-        display: flex;
-    }
-    
-    .header-menu-bar.active {
-        display: flex;
-    }
-
     
     /*------------------------------------*/
     
@@ -714,7 +724,7 @@ footer{
 
 /*--------------Mobile small------------------*/
 
-@media (max-width: 626px){
+@media (max-width: 640px){
 
 
     section{
@@ -732,20 +742,17 @@ footer{
     }
     
     p{
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 7px;
+        line-height: 23px;
     }
     
     .primary, .secondary{
         width: 80px;
     }
     
-    .primary{
-        color: black;
-        background-color: white;
+    .secondary{
+        text-decoration: underline;
     }
-    
-
     
     /*--------------Header-----------------*/
     .header-main{
@@ -753,27 +760,61 @@ footer{
     }
 
     .header-main-logo{
-        font-size: 20px;
+        font-size: 10px;
+        padding-right: none;
+        border-right: none;
+        padding: 8px 0 5px 0;
+        column-gap: 10px;
+        border-right: none;
+        border-bottom: 4px solid rgb(49, 255, 49);
     }
 
-    .header-menu-bar {
+    .header-menu-bar{
         display: none;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        width: 150px;
-        padding: 10px;
-        border-radius: 8px;
     }
 
-    .burger-menu {
-        display: flex;
+    .burger-btn{
+        width: 35px;
+        height: 35px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color:white;
+    }
+
+    .burger-menu-bar{
+        display:none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        background-color: black;
+        
     }
     
-    .header-menu-bar.active {
+    .burger-menu-bar ul{
+        width:100%;
+        height:100vh;
         display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .burger-menu-bar ul li{
+        flex-basis: 100%;
+        border-top:2px solid white;
+    }
+
+    .burger-menu-bar ul li:last-child{
+        background-color: orange;
+    }
+
+    .burger-menu-bar ul li a{
+       display: block;
+       height: 100%;
+       padding: 50px 0;
+       flex-basis: 100%;
+       text-align: center;
+       color: white;
     }
 
     /*------------------------------------*/
@@ -806,7 +847,11 @@ footer{
         border-radius: 200px;
     }
     .aboutsec-text{
-        text-align: center;
+        text-align: left;
+    }
+    .aboutsec-text p{
+        font-size: 14px;
+        line-height: 23px;
     }
 
     /*------------------------------------*/
@@ -817,10 +862,12 @@ footer{
         display: flex;
         flex-direction: column;
         row-gap: 40px;
+        margin: 0 auto;
     }
 
     .webdev, .dataanal{
-        width:90%;
+        width:80%;
+        margin: 0 auto;
     }
     
 
